@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "motion/react";
-import { RefObject, useEffect, useId, useState } from "react";
+import React, { RefObject, useEffect, useId, useState } from "react";
 import { cn } from "@/lib/utils";
 
 export interface AnimatedBeamProps {
@@ -92,7 +92,7 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
     // Initialize ResizeObserver
     const resizeObserver = new ResizeObserver((entries) => {
       // For all entries, recalculate the path
-      for (let entry of entries) {
+      for (let {} of entries) {
         updatePath();
       }
     });
