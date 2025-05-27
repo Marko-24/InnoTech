@@ -1,0 +1,25 @@
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 20s linear infinite;
+}
+
+.paused {
+    animation-play-state: paused !important;
+}
+
+.mask-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
